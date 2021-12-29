@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddbdbd;
+}
+
+h1{
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h2{
+    margin: 0 15px;
+    list-style: none;
+    color: white;
+    border: 3px solid;
+    /* width: 200px; */
+    display: block;
+}
+
+div.conteudo{
+    border-bottom: 1px dotted #fff;
+}
+
+p{
+    margin: 15px;
+    margin: 15px 25px;
+    color: #fff;
+}
+
+a{
+     text-decoration: none;
+}
+
+p:hover{
+    color: #e47171;
+    font-weight: 600;
+}
