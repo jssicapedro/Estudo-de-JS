@@ -1,8 +1,18 @@
-function lerValore(){
+
+function pedeQuantidade(){
+    let quantidade;
+    do {
+       quantidade = parseInt(prompt("Inque a quantidade do vetor"));
+    } while (isNaN(quantidade) || quantidade<=0);
+        
+    return quantidade;
+}
+
+function lerValore(x){
     let n; valores=[];
     
         do {
-            for (i=1; i<=5; i++){
+            for (i=1; i<=x; i++){
                 n=Number(prompt("Indique os valores positivos do seu vetor"));
 
                 if(isNaN(n)|| n<0){
@@ -16,11 +26,9 @@ function lerValore(){
         return valores;
     }
 
-
-
-
 /* cp */
-let v=[];
+let n, v=[];
 
-v = lerValore();
+n = pedeQuantidade();
+v = lerValore(n);
 alert(v);
