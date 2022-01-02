@@ -37,7 +37,7 @@ a{
      text-decoration: none;
 }
 
-p:hover{
+a:hover{
     color: #e47171;
     font-weight: 600;
 }
