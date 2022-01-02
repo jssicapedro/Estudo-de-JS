@@ -34,10 +34,13 @@ p{
 }
 
 a{
-     text-decoration: none;
+    color: white;
+    text-decoration: none;
+    border: 1px dotted white;
+    font-weight: 600;
 }
 
 a p:hover{
     color: #e47171;
-    font-weight: 600;
+    font-weight: bolder;
 }
