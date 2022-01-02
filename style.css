@@ -27,6 +27,7 @@ div.conteudo{
 }
 
 p{
+    text-align: justify;
     margin: 15px;
     margin: 15px 25px;
     color: #fff;
