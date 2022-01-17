@@ -20,9 +20,3 @@ function lerNumeros(){
 
     return v;
 }
-
-/* function mostrarPar(x){
-    if(x%2==0){
-        alert()
-    }
-} */

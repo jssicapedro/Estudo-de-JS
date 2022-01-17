@@ -1,34 +1,36 @@
+function indicaLimite(){
+    let limite;
 
-function pedeQuantidade(){
-    let quantidade;
     do {
-       quantidade = parseInt(prompt("Inque a quantidade do vetor"));
-    } while (isNaN(quantidade) || quantidade<=0);
-        
-    return quantidade;
+        limite = parseInt(prompt("Indique o limite do valor"));
+
+        if(isNaN(limite) || limite<0){
+            alert("Valor invalido");
+        }
+
+    } while (isNaN(limite) || limite<0);
+
+    return limite;
 }
 
-function lerValore(x){
-    let n; valores=[];
+function criaVetor(l){
+    let n, v=[];
+    do {
+        for(let i = 0; i < l ; i++){
+            n = parseInt(prompt("Indique o mumero da posição " + i));
+            v.push(n);
+        }
+
+        if(isNaN(n)){
+            alert("valor invalido")
+        }
+
+    } while (isNaN(n));
     
-        do {
-            for (i=1; i<=x; i++){
-                n=Number(prompt("Indique os valores positivos do seu vetor"));
-
-                if(isNaN(n)|| n<0){
-                    alert("Valor inválido!\nPor favor indique  valores superiores a 0");
-                }
-
-                valores.push(n);
-            }
-        } while (isNaN(n)|| n<0);
-        
-        return valores;
-    }
+    return v;
+}
 
 /* cp */
-let n, v=[];
-
-n = pedeQuantidade();
-v = lerValore(n);
-alert(v);
+let limite = indicaLimite();
+let vetor = criaVetor(limite);
+alert("Os vetor tem os valores " + vetor);

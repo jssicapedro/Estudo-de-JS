@@ -1,26 +1,21 @@
-function lerValore(){
-    let n; valores=[];
-    
-        do {
-            for (i=1; i<=5; i++){
-                n=Number(prompt("Indique os valores positivos do seu vetor"));
+function lerNum(){
+    let n, v=[];
+    do {
+        for(i = 0; i < 5; i++){
+            n=parseInt(prompt("Indique o valor n.º" + i));
 
-                if(isNaN(n)|| n<0){
-                    alert("Valor inválido!\nPor favor indique  valores superiores a 0");
-                }
+            v.push(n);   
+        }
 
-                valores.push(n);
-            }
-        } while (isNaN(n)|| n<0);
-        
-        return valores;
-    }
+        if(isNaN(n)){
+            alert("Valor Inválido")
+        }
 
+    } while (isNaN(n));
 
+    return v;
+}
 
-
-/* cp */
-let v=[];
-
-v = lerValore();
-alert(v);
+/* pp */
+numero = lerNum();
+alert("Os valores do array são" + numero);
