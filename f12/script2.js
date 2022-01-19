@@ -3,6 +3,5 @@ function btn(){
 }
 
 function dataHora(){
-    let hora = new Date();
-    alert(hora);
+    alert(Date());
 }

@@ -1,4 +1,4 @@
-(function (){
-    alert("Página carregada...");
-    document.body.style.background = "gray";
+(function carregada(){
+    alert("Página Carregada...");
+    document.body.style.background = "lightgray";
 }) ();
