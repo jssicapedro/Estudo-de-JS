@@ -10,7 +10,7 @@ let fundo = document.body.style;
 function carregar(){
    if(h>0 && h<12){
        frase.innerHTML ="Bom dia!";
-       img.setAttribute("src", "manha.jpg");
+       /* img.setAttribute("src", "manha.jpg"); */ /* n vale a pena ter pq já está pre definido */
        fundo.background = "bluesky";
 
    } else if(h>=12 && h<20){
