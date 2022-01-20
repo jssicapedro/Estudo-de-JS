@@ -1,49 +1,33 @@
-function indicaLimite(){
-    let limite;
+/* cp */
+let limite = lerNum("Indique um limite");
+let a = array(limite);
+fazMedia(a, limite)
 
+
+function lerNum(txt){
+    let n = Number(prompt(txt));
+    
     do {
-        limite = parseInt(prompt("Indique o limite do valor"));
-
-        if(isNaN(limite) || limite<0){
+        if(isNaN(n)){
             alert("Valor invalido");
         }
+    } while (isNaN(n));
 
-    } while (isNaN(limite) || limite<0);
-
-    return limite;
+    return n;
 }
 
-function criaVetor(l){
-    let n, v=[];
-    do {
-        for(let i = 0; i < l ; i++){
-            n = parseInt(prompt("Indique o mumero da posição " + i));
-            v.push(n);
-        }
-
-        if(isNaN(n) || n < 0){
-            alert("valor invalido")
-        }
-
-    } while (isNaN(n) || n < 0);
-    
-    return v;
-}
-
-function fazMedia(a){
-    let media, soma = 0;
-
-    for(let i = 0; i < a.length; i++){
-        soma = soma + a[i];
+function array( x ){
+    let v = [];
+    for(let i = 0; i < x; i++){
+        v.push(lerNum("Indique o valor da posição " + i));
     }
-
-    media = soma/a.length;
-
-    return media;
+    alert(v);
 }
 
-/* cp */
-let limite = indicaLimite();
-let vetor = criaVetor(limite);
-let media = fazMedia(vetor);
-alert("Os vetor tem os valores " + vetor + " e a média é de " + media);
+function fazMedia( y , x){
+    let soma = 0, media;
+    for(let i = 0; i < x; i++){
+        soma = soma + y[i];
+        console.log(soma)
+    }
+}
