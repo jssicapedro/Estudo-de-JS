@@ -1,9 +1,11 @@
-function alteraImagem(){
-    let img = document.querySelector("img");
+let img = document.getElementsByTagName("img")[0];
 
-    if(img.getAttribute("src") == "images/chuva.jpg"){
+function mudaImagem(){
+    if( img.getAttribute("src") == "images/chuva.jpg" ){
         img.setAttribute("src", "images/sol.jpg");
-    } else{
+        img.setAttribute("alt", "sol");
+    } else {
         img.setAttribute("src", "images/chuva.jpg");
+        img.setAttribute("alt", "sol");
     }
 }

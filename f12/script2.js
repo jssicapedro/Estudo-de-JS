@@ -3,5 +3,5 @@ function btn(){
 }
 
 function dataHora(){
-    alert(Date());
+    alert(new Date());
 }

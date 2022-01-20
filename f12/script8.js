@@ -1,5 +1,6 @@
 function myFunction(){
-    for(let i=0; i<=3; i++){
-        let x = document.getElementsByClassName("exemplo")[i].style.background = "red";
+    let x = document.getElementsByClassName("exemplo");
+    for(let i = 0; i < x.length; i++){
+         x[i].style.background = "red";
     }
 }

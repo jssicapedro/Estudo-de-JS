@@ -1,12 +1,11 @@
-function minusculas(){
-    alert(document.getElementById("box").value.toLowerCase());
+function grandes(){
+    let g = document.getElementById("box").value;
+
+    alert(g.toUpperCase());
 }
 
-function maiusculas(){
-    let maior = document.getElementById("box");
-    maior.value = maior.value.toUpperCase() 
-}
+function pequenas(){
+    let p = document.getElementById("box");
 
-function ambas(){
-    minusculas(),  maiusculas();
+    p.value = p.value.toLowerCase();
 }
