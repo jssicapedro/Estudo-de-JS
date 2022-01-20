@@ -1,3 +1,3 @@
-var v=["Mercedes", "Peugeot", "Nissan", "Renault"];
+let v = ['Mercedes', 'Peugeot', 'Nissan', 'Renaut'];
 
-alert(v.length);
+alert(v);
