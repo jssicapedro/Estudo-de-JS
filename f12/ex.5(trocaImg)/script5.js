@@ -1,11 +1,12 @@
-let img = document.getElementsByTagName("img")[0];
-
 function mudaImagem(){
-    if( img.getAttribute("src") == "images/chuva.jpg" ){
+//chama a imagem
+    let img = document.querySelector("img");
+//se esticer images/chuva, fica sol, sn chuva
+    if(img.getAttribute("src") == "images/chuva.jpg"){
         img.setAttribute("src", "images/sol.jpg");
         img.setAttribute("alt", "sol");
     } else {
         img.setAttribute("src", "images/chuva.jpg");
-        img.setAttribute("alt", "sol");
+        img.setAttribute("alt", "chuva");
     }
 }
