@@ -1,36 +1,28 @@
-function indicaLimite(){
-    let limite;
-
+function lerNum(text){
+//pede texto
+    let n = Number(prompt(text));
+//cinfirma se é um numero
     do {
-        limite = parseInt(prompt("Indique o limite do valor"));
-
-        if(isNaN(limite) || limite<0){
+        if(isNaN(n)){
             alert("Valor invalido");
         }
-
-    } while (isNaN(limite) || limite<0);
-
-    return limite;
-}
-
-function criaVetor(l){
-    let n, v=[];
-    do {
-        for(let i = 0; i < l ; i++){
-            n = parseInt(prompt("Indique o mumero da posição " + i));
-            v.push(n);
-        }
-
-        if(isNaN(n)){
-            alert("valor invalido")
-        }
-
     } while (isNaN(n));
-    
-    return v;
+
+    return n;
 }
+
+//guarda e mostra os 5 numeros
+function lerarray( x ){
+    let v = [];
+    //pede numeros 5 vzs
+    for(let i = 0; i < x ; i++){
+        v.push( lerNum( "Indique o valor" ) );
+    }
+    
+    alert(v);
+}
+
 
 /* cp */
-let limite = indicaLimite();
-let vetor = criaVetor(limite);
-alert("Os vetor tem os valores " + vetor);
+let limite = lerNum("Indique um limite");
+lerarray(limite);

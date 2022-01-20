@@ -1,17 +1,27 @@
-//ler 5 numeros e apresentar num array
-
-function lerNum(){
+function lerNum(text){
+//pede texto
+    let n = Number(prompt(text));
+//cinfirma se é um numero
     do {
-        let n = Number(prompt("Indique um valor"));
-
         if(isNaN(n)){
-            alert("Porfavor indique um numero!");
+            alert("Valor invalido");
         }
-
     } while (isNaN(n));
-    
+
     return n;
 }
 
+//guarda e mostra os 5 numeros
+function lerarray(){
+    let v = [];
+    //pede numeros 5 vzs
+    for(let i = 0; i < 5 ; i++){
+        v.push( lerNum( "Indique o valor" ) );
+    }
+    
+    alert(v);
+}
+
+
 /* cp */
-let num = lerNum();
+lerarray();
