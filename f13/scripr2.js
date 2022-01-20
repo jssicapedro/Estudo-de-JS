@@ -9,16 +9,8 @@ function adicionarItem(){
         document.getElementById("lista").appendChild(li);
 //apagar texto da caixa
         texto.value = "";
-        
 }
 
 function limpar(){
-        document.getElementById("lista").innerHTML = "";
+        lista.innerHTML = "";
 }
-
-/* 
-buscar texto da caixa
-criar li
-colocar texto e li  dentro do ul
-apagar texto da caixa
-*/
