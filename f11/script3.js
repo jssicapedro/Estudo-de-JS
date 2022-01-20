@@ -1,9 +1,3 @@
-/* cp */
-let limite = lerNum("Indique um limite");
-let a = array(limite);
-fazMedia(a, limite)
-
-
 function lerNum(txt){
     let n = Number(prompt(txt));
     
@@ -18,16 +12,25 @@ function lerNum(txt){
 
 function array( x ){
     let v = [];
+    
     for(let i = 0; i < x; i++){
         v.push(lerNum("Indique o valor da posição " + i));
     }
-    alert(v);
+    
+    return v;
 }
 
-function fazMedia( y , x){
-    let soma = 0, media;
-    for(let i = 0; i < x; i++){
-        soma = soma + y[i];
-        console.log(soma)
+function fazMedia( y ){
+    let media = 0;
+    
+    for(let i = 0; i < y.length; i++){
+        media = media + y[i]/y.length;
     }
+
+    alert(media);
 }
+
+/* cp */
+let limite = lerNum("Indique um limite");
+let numeros = array(limite);
+fazMedia(numeros);
